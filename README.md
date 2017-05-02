@@ -33,9 +33,21 @@ Procura um valor dentro de uma array retornando um Boolean ou uma Array
 Exemplo:
 
 ```javascript
-Var myArray = [“maça”, “uva”, “abacate”, “laranja”, “tomate”];
+var myArray = [“maça”, “uva”, “abacate”, “laranja”, “tomate”];
 SQ.searchInArray(myArray, “uva”);
 //retorna true
 SQ.searchInArray(myArray, “ate”, true);
 //retorna [“abacate”, “tomate”]
+```
+
+## removeFromArray (arrayToSearch: array, termToRemove: string)
+
+Remove um valor dentro de uma array retornando uma nova array
+
+Exemplo:
+
+```javascript
+var myArray = [“maça”, “uva”, “abacate”];
+SQ.removeFromArray(myArray, “uva”);
+//retorna [“maça”, “abacate”]
 ```

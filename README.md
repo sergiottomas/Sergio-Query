@@ -191,3 +191,31 @@ Exemplo:
 ```javascript
 SQ(“.msg_erro”).html(“<p>Houve um erro nesta operação</p>”);
 ```
+Resultado:
+
+```html
+<div id=”container”>
+  <p>Texto já existente</p>
+  <p>Este é um texto</p>
+</div>
+```
+
+## append (html: string | HTMLElement)
+
+Insere um elemento dentro do elemento selecionado pelo SQ na primeira posição do indice
+
+Exemplo:
+
+```javascript
+SQ(“#container”).prepend(“<p>Mais um texto</p>”);
+```
+
+Resultado:
+
+```html
+<div id=”container”>
+  <p>Mais um texto</p>
+  <p>Texto já existente</p>
+  <p>Este é um texto</p>
+</div>
+```

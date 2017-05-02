@@ -51,3 +51,20 @@ var myArray = [“maça”, “uva”, “abacate”];
 SQ.removeFromArray(myArray, “uva”);
 //retorna [“maça”, “abacate”]
 ```
+
+## removeFromObjectArray (arrayToSearch: array, key: string: termToRemove: string)
+
+Remove um valor dentro de uma array retornando uma nova array
+
+Exemplo:
+
+```javascript
+var minhaArray = [
+  {id: 1, nome: ‘maça’},
+  {id: 1, nome: ‘maça’}, 
+  {id: 2, nome: ‘uva},
+];
+
+SQ.removeFromObjectArray(minhaArray, “id”, 2);
+//retorna [{id: 1, nome: ‘maça’}]
+```

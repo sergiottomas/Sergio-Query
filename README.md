@@ -130,7 +130,24 @@ Exemplo:
 ```javascript
 SQ(“#container”).remove(“p”);
 ```
-OU
+No exemplo acima é removido dentro do elemento com ID "container" todos os elementos "p"
+
+Para remover o elemento selecionado pelo SQ baste utilizar o remove desta forma:
+
 ```javascript
 SQ(“p”).remove();
+```
+
+Todos os elementos "p" serão removidos.
+
+## each (callback: Function)
+
+Iterage com cada elemento selecionado pelo SQ
+
+Exemplo:
+
+```javascript
+SQ(“p”).each(function(element, index){
+  element.addClass(“negrito”);
+});
 ```

@@ -16,7 +16,6 @@ Exemplo:
   SQ(“#container p”); //Retorna: <p>Simples texto</p>
 </script>
 ```
-
 ## trigger (eventName: string)
 
 Dispara um evento no elemento selecionado pelo SQ.
@@ -34,9 +33,9 @@ Procura um valor dentro de uma array retornando um Boolean ou uma Array
 Exemplo:
 
 ```javascript
-Var minhaArray = [“maça”, “uva”, “abacate”, “laranja”, “tomate”];
-SQ.searchInArray(minhaArray, “uva”);
-//retorna  true
-SQ.searchInArray(minhaArray, “ate”, true);
-//retorna  [“abacate”, “tomate”]
+Var myArray = [“maça”, “uva”, “abacate”, “laranja”, “tomate”];
+SQ.searchInArray(myArray, “uva”);
+//retorna true
+SQ.searchInArray(myArray, “ate”, true);
+//retorna [“abacate”, “tomate”]
 ```

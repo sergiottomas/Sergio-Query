@@ -202,12 +202,12 @@ Resultado:
 
 ## append (html: string | HTMLElement)
 
-Insere um elemento dentro do elemento selecionado pelo SQ na primeira posição do indice
+Insere um elemento dentro do elemento selecionado pelo SQ na ultima posição do indice
 
 Exemplo:
 
 ```javascript
-SQ(“#container”).prepend(“<p>Mais um texto</p>”);
+SQ(“#container”).append(“<p>Este é um texto</p>”);
 ```
 
 Resultado:
@@ -219,3 +219,27 @@ Resultado:
   <p>Este é um texto</p>
 </div>
 ```
+
+## find (selector: string)
+
+Seleciona um elemento após ser selecionado pelo SQ
+
+Exemplo:
+HTML:
+
+```html
+<div id=”container”>
+  <p>Mais um texto</p>
+  Página7
+  <p>Texto já existente</p>
+  <p>Este é um texto</p>
+</div>
+```
+JS
+
+```javascript
+SQ(“#container”).find(“p”)
+//resultado [<p>Mais um texto</p>, <p>Texto já existente</p>,<p>Este é um exto</p>]
+```
+
+

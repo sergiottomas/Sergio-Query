@@ -151,3 +151,43 @@ SQ(“p”).each(function(element, index){
   element.addClass(“negrito”);
 });
 ```
+
+## val (value: string)
+
+Insere um valor no elemento selecionado pelo SQ
+
+Exemplo:
+
+```javascript
+SQ(“#txtNome”).val(“Sergio de Souza Tomas”);
+```
+
+## text (text: string)
+
+Insere um texto no elemento selecionado pelo SQ
+
+Exemplo:
+
+```javascript
+SQ(“#btnEnviar”).text(“Enviar”);
+```
+
+## html (html: string)
+
+Insere um html no elemento selecionado pelo SQ
+
+Exemplo:
+
+```javascript
+SQ(“.msg_erro”).html(“<p>Houve um erro nesta operação</p>”);
+```
+
+## append (html: string | HTMLElement)
+
+Insere um html no elemento selecionado pelo SQ ou uma String
+
+Exemplo:
+
+```javascript
+SQ(“.msg_erro”).html(“<p>Houve um erro nesta operação</p>”);
+```

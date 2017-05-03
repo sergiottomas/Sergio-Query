@@ -200,7 +200,7 @@ Resultado:
 </div>
 ```
 
-## append (html: string | HTMLElement)
+## prepend (html: string | HTMLElement)
 
 Insere um elemento dentro do elemento selecionado pelo SQ na ultima posição do indice
 
